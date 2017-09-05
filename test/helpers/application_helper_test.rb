@@ -4,7 +4,7 @@ class ApplicationHelperTest < ActionView::TestCase
 
 
  test "full title helper " do 
-    assert_equal full_title,     FILL_IN
-    assert_equal full_title("help"),  FILL_IN
+    assert_equal full_title,     "Help | Ruby on Rails Tutorial Sample App"
+    assert_equal full_title("help"),  "Ruby on Rails Tutorial Sample App" 
  end 
 end 

@@ -12,7 +12,7 @@ test "layout links" do
     assert_select "a [href=?]", about_path
     assert_select "a [href=?]", contact_path
     get contact_path
-    assert_select "title", full_title("contact")
+    assert_select "title", full_title("contact") 
     get signup_path
     assert_select "title", full_title("signup")
   end
